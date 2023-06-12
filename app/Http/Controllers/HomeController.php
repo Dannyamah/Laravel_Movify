@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('pages.movies');
     }
+
+    public function dashboard()
+    {
+        return view('dashboard.dashboard');
+    }
 }

@@ -35,7 +35,7 @@
                     <!-- begin navbar-header -->
                     <div class="navbar-header d-flex align-items-center">
                         <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{{ route('welcome') }}">
                             <img src="/d_assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
                             <img src="/d_assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
                         </a>
@@ -399,8 +399,8 @@
                             <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
                                         class="nav-icon ti ti-calendar"></i><span class="nav-title">Movies</span></a>
                                 <ul aria-expanded="false">
-                                    <li> <a href=''>All Movies</a> </li>
-                                    <li> <a href=''>Add Movies</a> </li>
+                                    <li> <a href='{{ route('movies.all') }}'>All Movies</a> </li>
+                                    <li> <a href='{{ route('movies.add') }}'>Add Movies</a> </li>
                                 </ul>
                             </li>
                             <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
